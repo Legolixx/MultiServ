@@ -1,0 +1,32 @@
+import Image from "next/image";
+import { Button } from "./ui/button";
+import Socials from "./Socials";
+
+export default function Navbar() {
+  return (
+    <section className="py-24 h-[84vh] xl:pt-20 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none mb-28">
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 xl:gap-x-20">
+        <div className="flex flex-col gap-10 md:gap-0 items-center md:items-start">
+          <h1 className="h1 mb-4 text-primary">
+            Simplifique sua busca por serviços. Contrate com facilidade e
+            eficiência!
+          </h1>
+          <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
+            O poder da escolha está em suas mãos.
+          </p>
+          <Button className="h-20 w-52 text-2xl rounded-full">
+            Saiba mais
+          </Button>
+          <Socials
+            containerStyles="flex gap-x-6 mx-auto xl:mx-0 xl:mt-10"
+            iconsStyles="text-primary text-[20px] dark:text-white/70 hover:text-black dark:hover:text-primary transition-all"
+          />
+        </div>
+
+        <div className="bg-orange-200 dark:bg-secondary w-[45em] rounded-lg rounded-bl-[20em] hidden xl:flex justify-end">
+          <Image src="/trabalhador4.png" width={500} height={400} alt="" />
+        </div>
+      </div>
+    </section>
+  );
+}
