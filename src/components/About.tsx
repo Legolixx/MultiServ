@@ -18,29 +18,29 @@ export default function About() {
         </div>
         <div className="flex flex-col xl:grid xl:grid-cols-3">
           <div className="col-span-1 flex flex-col items-center">
-            <Image src="/clique.svg" width={200} height={200} alt="" />
+            <Image src="/clique.svg" width={150} height={150} alt="" />
             <h1 className="h3 text-primary">Faça o seu pedido</h1>
-            <p className="text-muted-foreground text-xl mt-5">
+            <p className="text-muted-foreground text-lg mt-5">
               Fale o que você precisa. É rápido e de graça!
             </p>
           </div>
           <div className="col-span-1 flex flex-col items-center">
             <Image
               src="/card_trabalhador.svg"
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               alt=""
             />
             <h1 className="h3 text-primary">Receba até quatro orçamentos</h1>
-            <p className="text-muted-foreground text-xl mt-5 text-center">
+            <p className="text-muted-foreground text-lg mt-5 text-center">
               Profissionais avaliados entram em contato com você em instantes!
             </p>
           </div>
           <div className="col-span-1 flex flex-col items-center">
-            <Image src="/like.svg" width={200} height={200} alt="" />
+            <Image src="/like.svg" width={150} height={150} alt="" />
             <h1 className="h3 text-primary">Escolha o melhor</h1>
-            <p className="text-muted-foreground text-xl mt-5">
-              Negocie direto com eles. Fácil como nunca foi antes!
+            <p className="text-muted-foreground text-lg mt-5">
+              Negocie direto com o fornecedor!
             </p>
           </div>
         </div>
