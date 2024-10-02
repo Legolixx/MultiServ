@@ -1,3 +1,4 @@
+'use client'
 import ServicesCategories from "@/components/ServicesCategories";
 import React from "react";
 import data from "@/static/data.json";
