@@ -31,7 +31,7 @@ export default function About() {
               height={150}
               alt=""
             />
-            <h1 className="h3 text-primary">Receba até quatro orçamentos</h1>
+            <h1 className="h3 text-primary text-center">Receba até quatro orçamentos</h1>
             <p className="text-muted-foreground text-lg mt-5 text-center">
               Profissionais avaliados entram em contato com você em instantes!
             </p>

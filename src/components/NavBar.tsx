@@ -6,7 +6,7 @@ interface NavProps {
   containerStyles?: string;
 }
 
-export default function Navbar({ containerStyles}: NavProps) {
+export default function Navbar({ containerStyles }: NavProps) {
   return (
     <nav className={`${containerStyles}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -16,7 +16,9 @@ export default function Navbar({ containerStyles}: NavProps) {
 
         <div className="flex items-center space-x-4 text-primary">
           <Link href="/about">Como funciona</Link>
-          <Button variant="default">Seja um profissional</Button>
+          <a href="/cadastro">
+            <Button variant="default">Seja um profissional</Button>
+          </a>
           <ThememToggle />
         </div>
       </div>

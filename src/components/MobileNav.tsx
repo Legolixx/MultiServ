@@ -19,10 +19,15 @@ const MobileNav = () => {
             </div>
             <div className="flex flex-col gap-10 items-center space-x-4 text-primary">
               <Link href="/about">Como funciona</Link>
-              <Button variant="default">Seja um profissional</Button>
+              <a href="/cadastro">
+                <Button variant="default">Seja um profissional</Button>
+              </a>
             </div>
           </div>
-          <Socials containerStyles="flex gap-x-4 text-primary" iconsStyles="text-2xl" />
+          <Socials
+            containerStyles="flex gap-x-4 text-primary"
+            iconsStyles="text-2xl"
+          />
         </div>
       </SheetContent>
     </Sheet>
