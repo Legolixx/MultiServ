@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import { Label } from "./ui/label";
 import ProjectCard from "./ProjectCard";
-import { useSearchParams } from "next/navigation";
+
 import { useRouter } from "next/navigation";
 
 interface DataProject {
@@ -17,13 +17,15 @@ interface DataProject {
 
 interface ServicesCategoriesProps {
   data: DataProject[];
+  initialCategory: string;
 }
 
-const ServicesCategories: React.FC<ServicesCategoriesProps> = ({ data }) => {
-  const searchParams = useSearchParams();
+const ServicesCategories: React.FC<ServicesCategoriesProps> = ({
+  data,
+  initialCategory,
+}) => {
   const router = useRouter();
-  const initialCategory = searchParams.get("categoria") || "all";
-  const [category, setCategory] = useState(initialCategory); 
+  const [category, setCategory] = useState(initialCategory);
   const [filteredServices, setFilteredServices] = useState<DataProject[]>([]);
 
   useEffect(() => {
