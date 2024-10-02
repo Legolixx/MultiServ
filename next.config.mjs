@@ -7,7 +7,10 @@ const nextConfig = {
                 hostname: 'media.istockphoto.com'
             }
         ]
-    }
+    },
+    experimental:  {
+               missingSuspenseWithCSRBailout: false,
+    },
 };
 
 export default nextConfig;
