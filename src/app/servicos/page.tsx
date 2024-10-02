@@ -1,7 +1,7 @@
 "use client";
 
 import ServicesCategories from "@/components/ServicesCategories";
-import React from "react";
+import React, { Suspense } from "react";
 import data from "@/static/data.json";
 import { useSearchParams } from "next/navigation";
 
@@ -11,7 +11,9 @@ const ServicePage = () => {
 
   return (
     <section>
-      <ServicesCategories data={data} initialCategory={initialCategory} />
+      <Suspense>
+        <ServicesCategories data={data} initialCategory={initialCategory} />
+      </Suspense>
     </section>
   );
 };
