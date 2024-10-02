@@ -2,9 +2,13 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ThememToggle from "./ThememToggle";
 
-export default function Navbar() {
+interface NavProps {
+  containerStyles?: string;
+}
+
+export default function Navbar({ containerStyles}: NavProps) {
   return (
-    <nav className="w-full py-4 px-6">
+    <nav className={`${containerStyles}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-3xl text-primary font-bold start-1 tracking-[10px]">
           <Link href="/">MultiServ</Link>

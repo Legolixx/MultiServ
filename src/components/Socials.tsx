@@ -14,23 +14,23 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "https://www.youtube.com/user/fazekas100",
+    path: "https://www.youtube.com",
     name: <RiYoutubeFill />,
   },
   {
-    path: "https://br.linkedin.com/in/victor-fazekas",
+    path: "https://br.linkedin.com",
     name: <RiLinkedinFill />,
   },
   {
-    path: "https://github.com/Legolixx",
+    path: "https://github.com",
     name: <RiGithubFill />,
   },
   {
-    path: "https://www.facebook.com/victor.fazekas.9",
+    path: "https://www.facebook.com",
     name: <RiFacebookFill />,
   },
   {
-    path: "https://www.instagram.com/vfazekass/",
+    path: "https://www.instagram.com",
     name: <RiInstagramFill />,
   },
 ];

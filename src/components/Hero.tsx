@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="py-16 h-[84vh] xl:pt-5 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none mb-28">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 xl:gap-x-10">
         <div className="flex flex-col gap-10 md:gap-0 items-center md:items-start">
-          <h1 className="h1 mb-4 text-primary">
+          <h1 className="h1 mb-4 text-primary text-center lg:text-left">
             Simplifique sua busca por serviços. Contrate com facilidade e
             eficiência!
           </h1>

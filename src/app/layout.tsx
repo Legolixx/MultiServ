@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
+import ThememToggle from "@/components/ThememToggle";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,7 +35,18 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-          <Navbar />
+          <div className="hidden md:block">
+            <Navbar containerStyles="w-full py-4 px-6" />
+          </div>
+          <div className="flex flex-row gap-5 justify-between items-center md:hidden m-5">
+            <div className="text-3xl text-primary font-bold start-1 tracking-[10px] gap-5">
+              <Link href="/">MultiServ</Link>
+            </div>
+            <div className="flex flex-row justify-center items-center gap-5">
+              <MobileNav />
+              <ThememToggle />
+            </div>
+          </div>
           {children}
           <Footer />
         </ThemeProvider>

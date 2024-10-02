@@ -45,10 +45,10 @@ export default function Services() {
   ];
 
   return (
-    <section className="flex flex-row justify-center gap-10 mb-28">
+    <section className="grid grid-cols-2 md:grid-cols-8 items-center justify-center gap-10 mb-28 m-20">
       {links.map((link) => (
-        <a key={link.name} href={link.link}>
-          <Image src={link.img} width={64} height={64} alt={link.name} className=" hover:scale-110 hover:rotate-12" />
+        <a key={link.name} href={link.link} className="flex flex-col items-center justify-center">
+          <Image src={link.img} width={64} height={64} alt={link.name} className="hover:scale-110 hover:rotate-12 flex items-center justify-center" />
           <span className="flex items-center justify-center text-primary font-semibold">{link.name}</span>
         </a>
       ))}
