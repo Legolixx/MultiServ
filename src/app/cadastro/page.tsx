@@ -1,9 +1,12 @@
+import FormCadastro from '@/components/forms/FormCadastro'
 import React from 'react'
 
-const FormCadastro = () => {
+const FormCadastroPage = () => {
   return (
-    <div className='flex min-h-[23.5em]'>FormCadastro</div>
+    <section className='flex min-h-[23.5em]'>
+        <FormCadastro />
+    </section>
   )
 }
 
-export default FormCadastro
+export default FormCadastroPage

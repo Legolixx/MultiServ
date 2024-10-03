@@ -25,7 +25,7 @@ export default function Services() {
     {
       img: "/services/tecnologias.svg",
       name: "Tecnologias",
-      link: "/servicos?categoria=tecnologias",
+      link: "/servicos?categoria=tecnologia",
     },
     {
       img: "/services/aulas.svg",
